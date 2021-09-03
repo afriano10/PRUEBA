@@ -1,0 +1,25 @@
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -mapper /user/bigdata11/git-codigo/PRUEBA/mapper_1a.py -reducer /user/bigdata11/git-codigo/PRUEBA/reducer_1a.py -input hdfs:///datos/reuters/individual/* -output /user/bigdata11/resultados_1a
+
+
+mapred streaming -mapper /home/bigdata11/git-codigo/PRUEBA/mapper_1a.py -reducer /home/bigdata11/git-codigo/PRUEBA/reducer_1a.py -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1a2
+
+mapred streaming -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1a6 -mapper "mapper_1a.py" -reducer "reducer_1a.py" -file /home/bigdata11/git-codigo/PRUEBA/mapper_1a.py -file /home/bigdata11/git-codigo/PRUEBA/reducer_1a.py  
+
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1a18 -mapper "python mapper_1a.py" -reducer "python reducer_1a.py" -file mapper_1a.py -file reducer_1a.py
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -mapper /home/bigdata11/git-codigo/PRUEBA/mapper_1a.py -reducer /home/bigdata11/git-codigo/PRUEBA/reducer_1a.py -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1a12
+
+
+/hadoop/yarn/local/usercache/bigdata11/appcache/application_1628540818939_0526/container_e03_1628540818939_0526_01_000072
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1ap -mapper "python mapper_1a.py" -reducer "python reducer_prueba.py" -file mapper_1a.py -file reducer_prueba.py
+
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1c11 -mapper "python mapper_1c1.py" -reducer "python reducer_1c1.py" -file mapper_1c1.py -file reducer_1c1.py
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1c23 -mapper "python mapper_1c2.py" -reducer "python reducer_1c2.py" -file mapper_1c2.py -file reducer_1c2.py
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1c21 -mapper "python mapper_1b_b.py" -reducer "python reducer_1b.py" -file mapper_1b_b.py -file reducer_1b.py
+
+hadoop jar /usr/hdp/3.1.4.0-315/hadoop-mapreduce/hadoop-streaming.jar -input /datos/reuters/individual/reut2* -output /user/bigdata11/resultados_1c3 -mapper "python mapper_1c3.py" -reducer "python reducer_1c3.py" -file mapper_1c3.py -file reducer_1c3.py
